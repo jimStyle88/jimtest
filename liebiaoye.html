@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>列表页</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/all.css" />
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/jquery.chajian.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+<!--
+	作者：815386845@qq.com
+	时间：2016-06-23
+	描述：首页最顶部结构
+-->
+		<div class="top">
+			<div class="top-left">送至： 北京∨</div>
+			<div class="top-middle">你好: 欢迎来到<span>为为商城</span><a herf="denglu.html">请登录</a><a herf="zhuce.html" id="zhuce">免费注册</a></div>
+			<div class="top-right">
+				<dl class="list">
+					<dt>
+						<a href="#">我的订单</a>
+					</dt>
+					<dd>
+						<ul>
+							<li><a href="#">待付款订单</a></li>
+							<li><a href="#">待确认收货</a></li>
+							<li><a href="#">待评价交易</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="list">
+					<dt>
+						<a href="#">商家中心</a>
+					</dt>
+					<dd>
+						<ul>
+							<li><a href="#">申请入驻</a></li>
+							<li><a href="#">我的店铺</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="list">
+					<dt>
+						<p><img src="img/phone.png"/><a href="#">手机为为</a></p>
+					</dt>
+				</dl>
+				<dl class="list">
+					<dt>
+						<a href="#">商家服务</a>
+					</dt>
+					<dd>
+						<ul>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">商家服务</a></li>
+							<li><a href="#">客服中心</a></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="list">
+					<dt>
+						<p><img src="img/wechat.png"/><a href="#">关注我们</a></p>
+					</dt>
+					<dd class="lastdd">
+						<div class="cord"><p>扫描二维码</p><p>关注商城微信号</p></div>
+                        <span class="clear"></span>
+						<div><img src="img/erweima.png"/></div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!--
+	作者：815386845@qq.com
+	时间：2016-06-23
+	描述：页面搜索栏结构
+-->
+	<div id="header">
+		<div class="header-left"><img src="img/logo.png"/></div>
+		<div class="header-left1"><img src="img/为为网/huiju.jpg"/></div>
+		<div class="header-middle">
+			<div class="search-form">
+				<span class="home-list">商品</span>
+				<input type="text" value="请输入搜索商品" />
+				<button class="btn">搜索</button>
+			</div>
+			<div>
+				<a href="#" class="color-orange">沙发</a><a href="#">床</a><a href="#">瓷砖</a><a href="#" class="color-orange">地板</a><a href="#">餐桌</a>
+			</div>
+		</div>
+		<ul class="goods-list"><li>商品</li><li>店铺</li></ul>
+		<div class="header-right">我的购物车</div>
+		<div class="hide-carlist">
+			<h4>最新加入的商品</h4>
+			<p>你的购物车里没有商品，请选择你心爱的商品吧</p>
+			<div><button>去购物车结算</button></div>
+		</div>
+		
+	</div>
+	<!--
+    	作者：815386845@qq.com
+    	时间：2016-06-23
+    	描述：主页主题内容
+    -->
+    <div id="main-top">
+    	<div class="main-top-left main-top-left1">☰ &nbsp;精选分类推荐</div>
+    	<ul class="main-top-middle">
+    		<li><a href="index.html">首页</a></li>
+    		<li class="show1"><a href="#">建材</a></li>
+    		<li class="show2"><a href="#">家居家纺</a></li>
+    		<li><a href="#">品牌</a></li>
+    		<li><a href="#">店铺</a></li>
+    		<li><a href="#">装修攻略</a></li>
+    		<li><a href="#">装修图库</a></li>
+    	</ul>
+    	<div class="jiancai">
+    		<div>
+    			<h4>卧室</h4>
+    			<ul>
+    				<li><a href="#">床</a></li>
+    				<li><a href="#">床垫</a></li>
+    				<li><a href="#">床头柜</a></li>
+    				<li><a href="#">衣柜</a></li>
+    				<li><a href="#">斗柜</a></li>
+    				<li><a href="#">妆台镜/妆镜</a></li>
+    				<li><a href="#">穿衣镜/衣帽架</a></li>
+    				<li><a href="#">床尾凳</a></li>
+    				<li><a href="#">卧室套装</a></li>
+    			</ul>
+    			<h4>儿童房</h4>
+    			<ul>
+    				<li><a href="#">儿童床</a></li>
+    				<li><a href="#">儿童床垫</a></li>
+    				<li><a href="#">儿童床头柜</a></li>
+    				<li><a href="#">儿童衣柜</a></li>
+    				<li><a href="#">儿童书桌/电脑台</a></li>
+    				<li><a href="#">儿童归类</a></li>
+    				<li><a href="#">儿童房套装</a></li>
+    			</ul>
+    		</div>
+    		<div>
+    			<h4>客厅</h4>
+    			<ul>
+    				<li><a href="#">沙发</a></li>
+    				<li><a href="#">茶几/边几</a></li>
+    				<li><a href="#">电视柜</a></li>
+    				<li><a href="#">鞋柜</a></li>
+    				<li><a href="#">酒柜/装饰柜</a></li>
+    				<li><a href="#">休闲凳/椅</a></li>
+    				<li><a href="#">监听/玄关柜</a></li>
+    				<li><a href="#">客厅套装</a></li>
+    			</ul>
+    			<h4>客厅</h4>
+    			<ul>
+    				<li><a href="#">办公桌</a></li>
+    				<li><a href="#">文件柜</a></li>
+    				<li><a href="#">办公椅</a></li>
+    			</ul>
+    		</div>
+    		<div>
+    			<h4>餐厅</h4>
+    			<ul>
+    				<li><a href="#">餐桌</a></li>
+    				<li><a href="#">餐椅</a></li>
+    				<li><a href="#">餐边柜/餐车</a></li>
+    				<li><a href="#">餐厅套装</a></li>
+    			</ul>
+    			<h4>书房</h4>
+    			<ul>
+    				<li><a href="#">书桌/工作台</a></li>
+    				<li><a href="#">书柜/书架</a></li>
+    				<li><a href="#">书椅/转椅</a></li>
+    				<li><a href="#">书房套装</a></li>
+    			</ul>
+    			<h4>家饰</h4>
+    			<ul>
+    				<li><a href="#">床上用品</a></li>
+    				<li><a href="#">布艺织物</a></li>
+    				<li><a href="#">香薰制品</a></li>
+    				<li><a href="#">四件套</a></li>
+    				<li><a href="#">被子/毯子</a></li>
+    				<li><a href="#">凉席</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="jiaju">
+    		<div>
+    			<h4>卧室2</h4>
+    			<ul>
+    				<li><a href="#">床</a></li>
+    				<li><a href="#">床垫</a></li>
+    				<li><a href="#">床头柜</a></li>
+    				<li><a href="#">衣柜</a></li>
+    				<li><a href="#">斗柜</a></li>
+    				<li><a href="#">妆台镜/妆镜</a></li>
+    				<li><a href="#">穿衣镜/衣帽架</a></li>
+    				<li><a href="#">床尾凳</a></li>
+    				<li><a href="#">卧室套装</a></li>
+    			</ul>
+    			<h4>儿童房2</h4>
+    			<ul>
+    				<li><a href="#">儿童床</a></li>
+    				<li><a href="#">儿童床垫</a></li>
+    				<li><a href="#">儿童床头柜</a></li>
+    				<li><a href="#">儿童衣柜</a></li>
+    				<li><a href="#">儿童书桌/电脑台</a></li>
+    				<li><a href="#">儿童归类</a></li>
+    				<li><a href="#">儿童房套装</a></li>
+    			</ul>
+    		</div>
+    		<div>
+    			<h4>客厅2</h4>
+    			<ul>
+    				<li><a href="#">沙发</a></li>
+    				<li><a href="#">茶几/边几</a></li>
+    				<li><a href="#">电视柜</a></li>
+    				<li><a href="#">鞋柜</a></li>
+    				<li><a href="#">酒柜/装饰柜</a></li>
+    				<li><a href="#">休闲凳/椅</a></li>
+    				<li><a href="#">监听/玄关柜</a></li>
+    				<li><a href="#">客厅套装</a></li>
+    			</ul>
+    			<h4>客厅2</h4>
+    			<ul>
+    				<li><a href="#">办公桌</a></li>
+    				<li><a href="#">文件柜</a></li>
+    				<li><a href="#">办公椅</a></li>
+    			</ul>
+    		</div>
+    		<div>
+    			<h4>餐厅2</h4>
+    			<ul>
+    				<li><a href="#">餐桌</a></li>
+    				<li><a href="#">餐椅</a></li>
+    				<li><a href="#">餐边柜/餐车</a></li>
+    				<li><a href="#">餐厅套装</a></li>
+    			</ul>
+    			<h4>书房2</h4>
+    			<ul>
+    				<li><a href="#">书桌/工作台</a></li>
+    				<li><a href="#">书柜/书架</a></li>
+    				<li><a href="#">书椅/转椅</a></li>
+    				<li><a href="#">书房套装</a></li>
+    			</ul>
+    			<h4>家饰2</h4>
+    			<ul>
+    				<li><a href="#">床上用品</a></li>
+    				<li><a href="#">布艺织物</a></li>
+    				<li><a href="#">香薰制品</a></li>
+    				<li><a href="#">四件套</a></li>
+    				<li><a href="#">被子/毯子</a></li>
+    				<li><a href="#">凉席</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="main-top-right"><img src="img/为为网/nav-photo.jpg"/></div>
+    </div>                 
+	<div id="product-list">
+		<div class="product-listall">
+			<div class="product-list-top">
+				<h3>建材</h3>
+				<ul>
+					<li><a href="#">基础建材</a></li>
+					<li><a href="#">瓷砖/大理石</a></li>
+					<li><a href="#">卫浴</a></li>
+					<li><a href="#">集成吊顶</a></li>
+					<li><a href="#">橱柜</a></li>
+					<li><a href="#">淋浴房</a></li>
+					<li><a href="#">地板/榻榻米</a></li>
+					<li><a href="#">移门衣柜</a></li>
+					<li><a href="#">墙纸</a></li>
+					<li><a href="#">门窗</a></li>
+					<li><a href="#">净水器/水处理</a></li>
+				</ul>
+			</div>
+			<div class="product-list-middle">
+				<h3>家具家纺</h3>
+				<ul>
+					<li><a href="#">卧室</a></li>
+					<li><a href="#">客厅</a></li>
+					<li><a href="#">餐厅</a></li>
+					<li><a href="#">书房</a></li>
+					<li><a href="#">儿童房</a></li>
+					<li><a href="#">办公家具</a></li>
+					<li><a href="#">家饰</a></li>
+				</ul>
+			</div>
+			<div class="product-list-bottom">
+				<h3>为为旅游</h3>
+				<ul>
+					<li><a href="#">暑期亲子</a></li>
+					<li><a href="#">自由行</a></li>
+					<li><a href="#">景点门票</a></li>
+					<li><a href="#">休闲游轮</a></li>
+					<li><a href="#">浪漫海岛</a></li>
+					<li><a href="#">日航亚洲</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+ <!--
+ 	作者：815386845@qq.com
+ 	时间：2016-06-26
+ 	描述：主题
+ -->
+ <div id="product-top">
+ 	<a href="index.html">首页 ></a> <a href="#">搜索结果> </a>
+ </div>
+ <div id="bed-left">
+ 	<div class="bed-top">
+ 		<p>分类筛选</p>
+ 		<div class="content">
+		    <ul id="files" class="tree">
+		        <li>
+		        	<a href="#">家具家纺</a>
+		            <ul>
+		                <li>
+		                	<a href="#" >卧室</a>
+		                    <ul>
+		                        <li><a href="#" >床</a></li>																																																				
+		                        <li><a href="#" >床垫</a></li>
+		                        <li><a href="#">床头柜</a></li>
+		                        <li><a href="#">床尾凳</a></li>
+		                    </ul>
+		                </li>
+		                <li>
+		                	<a href="#" >儿童房</a>
+		                    <ul>
+		                        <li> <a href="#" >儿童床</a></li>
+		                        <li> <a href="#" >儿童床垫</a></li>
+		                        <li> <a href="#" >儿童床头柜</a></li>
+		                    </ul>
+		                 </li>
+		                <li>
+		                	<a href="#" >家饰</a>
+		                	<ul>
+		                   		<li> <a href="#" >床上用品</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+		        </li>
+		    </ul>
+		</div>
+ 	</div>
+ 	<div class="bed-bottom">
+ 		<p>最近浏览</p>
+ 		<span>无最近的浏览记录</span>
+ 	</div>
+ </div>
+<div id="bed-right">
+	<div class="bed-right-nav">
+			<a href="#" class="nav1">排序方式</a>
+			<a href="#" class="nav2">默认</a>
+			<a href="#" class="nav2">销量 ↓</a>
+			<a href="#" class="nav2">价格 ↓</a>
+			<a href="#" class="nav2">人气 ↓</a>
+			<span class="local">商品所在地区 : <input type="text" value="不限地区"></span>
+			<span class="local2"><a href="#" class="nav3">上一页</a><a href="#" class="nav3">下一页</a></span>
+	</div>
+	<div class="bed-right-list">
+		<ul class="bed-right-listall">
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+			<li>
+				<a href="#"><img src="img/bed.jpg"/></a>
+				<a href="#">克罗德曼 布艺/松木框架 AFB-123 高箱床</a><br>
+				<em>￥6800.00 &nbsp;&nbsp;</em><del>￥1.3W</del><br>
+				<span class="kucun">库存20</span>
+				<span class="dizhi">上海</span>
+			</li>
+		</ul>
+	</div>
+	<div class="list-num">
+		<ul>
+			<li style="background:#fafafa">首页</li>
+			<li class="fanye" style="background:#fafafa">上一页</li>
+			<li style="background:#fafafa">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li style="background:#fafafa">...</li>
+			<li class="fanye">下一页</li>
+			<li>末页</li>
+		</ul>
+	</div>
+	<div class="liuyan">
+		<p class="ptop"><strong>猜你喜欢的宝贝</strong></p>
+		<p class="pbottom">暂无商品想你推荐</p>
+	</div>
+</div>
+<!--<div style="width:100%;height:1000px;background: pink;overflow: hidden"></div>-->
+<span class="clear"></span>
+<!--
+	作者：815386845@qq.com
+	时间：2016-06-26
+	描述：页脚
+-->
+		<div id="footer-buttom" style="overflow: hidden">
+			<div class="footer-left">
+				<h3>客服在线</h3>
+				<div>
+					<img src="img/为为网/kefu.jpg"/>
+					<p><span class="phone-number">020-81386868</span><br/>
+					<span class="phone-times">周一到周五8:30-18:00</span></p>
+				</div>
+			</div>
+			<div class="footer-middle">
+				<dl>
+					<dt>帮助中心</dt>
+					<dd><a href="#">积分细则</a></dd>
+					<dd><a href="#">忘记密码</a></dd>
+					<dd><a href="#">积分兑换说明</a></dd>
+				</dl>
+				<dl>
+					<dt>店主之家</dt>
+					<dd><a href="#">如何申请开店</a></dd>
+				</dl>
+				<dl>
+					<dt>支付方式</dt>
+					<dd><a href="#">在线支付</a></dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货流程</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">退款申请</a></dd>
+				</dl>
+				<dl>
+					<dt>客服中心</dt>
+					<dd><a href="#">会员修改个人资料</a></dd>
+					<dd><a href="#">会员修改密码</a></dd>
+				</dl>
+			</div>
+			<div class="footer-right">
+				<div class="sao">
+					<h4>为为网APP</h4>
+					<img src="img/erweima.png" />
+					<p>下载移动客户端</p>
+				</div>
+				<div class="sao">
+					<h4>为为网微信</h4>
+					<img src="img/erweima.png" />
+					<p>关注为为网微信</p>
+				</div>
+			</div>
+		</div>
+		<div class="last">
+			<p>
+				<a href="index.html">首页 ｜</a>
+				<a href="#">招聘英才 ｜</a>
+				<a href="#">合作洽谈 ｜</a>
+				<a href="#">联系我们 ｜</a>
+				<a href="#">首页关于我们 ｜</a>
+				<a href="#">友情链接 ｜</a>
+			</p>
+			<p>Copyring 2015 泸ICP备08001311 ｜营业执照</p>
+		</div>
+		<!--返回顶部-->
+		<div id="retrunTop">
+			<div class="retrunTop-top"><a href="#"><img src="img/为为网/head.jpg"></a></div>
+			<div class="retrunTop-middle"><a href="#"><img src="img/为为网/shopping.jpg"></a></div>
+			<div class="retrunTop-middle1"><a href="#"><img src="img/为为网/qq.jpg"></a></div>
+			<div class="retrunTop-bottom"><a href="#"><img src="img/为为网/top.jpg"></a></div>
+			<p class="p1"><a href="#">会员登录</a></p>
+			<p class="p2" id="gogo"><a href="#">返回顶部</a></p>
+		</div>
+		<div class="list-car">
+			<p class="shoppingcar">我的购物车</p>
+			<input type='text' value="搜索你的商品">
+			<button class="maidan"><a href="jiesuan.html">结算商品</a></button>
+		</div>
+	</body>
+</html>
